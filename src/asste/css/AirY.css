@@ -1,0 +1,27 @@
+.AirY-div{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica,'Microsoft Yahei', sans-serif;
+}
+.AirY-div-img{
+    text-align: center;
+    
+}
+.AirY-div-img > img {
+    text-align: center;
+    width: 90%;
+    text-align: center;
+}
+.AirY-div-list{
+    margin-top: 20px;
+}
+.AirY-div-list-info{
+    border-bottom: 1px solid rgb(145, 37, 37);
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.foot{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

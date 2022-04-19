@@ -1,0 +1,27 @@
+.Software-div{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica,'Microsoft Yahei', sans-serif;
+}
+.Software-div-img{
+    text-align: center;
+}
+.Software-div-img > img {
+    width: 85%;
+    text-align: center;
+}
+
+.Softwar-div-list-info{
+    border-bottom: 1px solid rgb(197, 194, 194);
+    text-indent:2em;
+    padding: 2rem;
+}
+.Softwar-div-list-info >h3{
+    color: rgb(129, 72, 72);
+}
+
+.foot{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
