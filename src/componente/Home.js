@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../asste/css/Home.css"
 import company from '../asste/images/company.jpg'
-import { Divider, Button, Pagination } from 'antd';
+import { Divider, Carousel, Pagination } from 'antd';
 import { LoadingOutlined, SmallDashOutlined } from '@ant-design/icons';
 const data = [
   {
@@ -16,7 +16,7 @@ const data = [
     text6: ""
   },
   {
-    ul: require('../asste/images/home/cems.jpg').default,
+    ul: require('../asste/images/home/cems.png').default,
     pust: "",
     text: "气污染源在线监测设备",
     text1: "常规排放监测系统",
@@ -59,10 +59,8 @@ const data = [
     text5: "",
     text6: ""
   },
-
-
   {
-    ul: require("../asste/images/home/anfang.jpg").default,
+    ul: require("../asste/images/home/anfang.png").default,
     pust: "",
     text: "安全系统监控服务",
     text1: "网络与信息安全软件开发",
@@ -73,7 +71,6 @@ const data = [
     text6: "",
   },
 ]
-
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -99,11 +96,9 @@ class Home extends Component {
     })
     this.setState({ dataList: tempList, currentPage: pageNumber })
   }
-
   onShowSizeChange(current, pageSize) {
     console.log(current, pageSize);
   }
-
   componentDidMount() {
     const { currentPage, pageCount } = this.state
     const page = currentPage - 1
@@ -119,7 +114,12 @@ class Home extends Component {
     return (
 
       <div className="Home-div">
-        <br></br>
+        <Carousel className="Home-div-lb" autoplay>
+              <img src={require("../asste/images/home/beijing2.jpg").default} alt="logo" />
+              <img  className="Home-div-lb-img" src={require("../asste/images/home/beijing3.png").default} alt="logo" />
+              <img src={require("../asste/images/home/beijing4.png").default} alt="logo" />
+              <img src={require("../asste/images/home/beijing.jpg").default} alt="logo" />
+        </Carousel>
         {/* 简介 头*/}
         <div className="Home-div-account" >
           <div className="span"><h2>公司简介 Company profile</h2></div>
@@ -146,22 +146,22 @@ class Home extends Component {
             this.state.dataList.map((item, key) => {
               if (item.text.indexOf(this.state.search) > -1) {
                 return (
-                  <div className="home-left-account-list"  style={{ display: 'flex', flexDirection: 'column', width: '50%', alignItems: 'center' }}>
-                    <h3 style={{color:'rgb(129, 72, 72)'}}>{item.text}</h3>
-                    <img style={{ height: '45%',width:'45%' }} src={item.ul} />
+                  <div className="home-left-account-list" style={{ display: 'flex', flexDirection: 'column', width: '50%', alignItems: 'center' }}>
+                    <h3 style={{ color: 'rgb(129, 72, 72)' }}>{item.text}</h3>
+                    <img style={{ width:'45%' }} src={item.ul} />
                     <p >{item.text1}</p>
                     <p>{item.text2}</p>
                     <p>{item.text3}</p>
                     <p>{item.text4}</p>
                     <p>{item.text5}</p>
+                    <p>{item.text6}</p>
                   </div>
                 )
               }
             })
           }
-        
         </div>
-        <div className='foot'>  <span>Copyright  津ICP备17003569号</span> </div>
+        <div className='foot'><span>Copyright  津ICP备17003569号</span>  </div>
       </div>
     );
   }

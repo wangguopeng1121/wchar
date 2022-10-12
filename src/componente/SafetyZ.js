@@ -109,7 +109,7 @@ componentDidMount() {
                                         <div className="AirZ-div-list-info" style={{ display: 'flex', flexDirection: 'column', width: '100%', alignItems: 'center' }}>
                                             <img style={{ width: '70%' }} src={item.ul} />
                                             <br></br>
-                                            <p style={{ fontSize: '4' },{whiteSpace:"pre-wrap"}}>{item.texth1}</p>
+                                            <p style={{ fontSize: 15 ,whiteSpace:"pre-wrap"}}>{item.texth1}</p>
                                             <Button type="primary" size="middle" >{item.texta} </Button>
                                         </div>
                                     )

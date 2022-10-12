@@ -121,9 +121,9 @@ componentDidMount() {
 
                             })
                         }
-                        <div className='foot'>  <span>Copyright  津ICP备17003569号</span> </div>
+                      
                     </div>
-
+                    <div className='foot'>  <span>Copyright  津ICP备17003569号</span> </div>
            </div> 
         );
     }

@@ -19,9 +19,6 @@
 .Softwar-div-list-info >h3{
     color: rgb(129, 72, 72);
 }
-
 .foot{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: center;
+    margin: 20px auto;
 }

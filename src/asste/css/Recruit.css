@@ -1,0 +1,16 @@
+
+.Recruit-div{
+    width: 100%;
+    height: 100%;
+    font-family:Arial, Helvetica,'Microsoft Yahei', sans-serif;
+}
+.Recruit-div-img{
+    text-align: center;
+}
+.Recruit-div-img >img{
+    width: 95%;
+    text-align: center;
+}
+.Recruit-div-list{
+    width: 95%;
+}

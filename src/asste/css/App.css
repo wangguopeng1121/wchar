@@ -37,6 +37,6 @@
   }
 }
 .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
-  color: rgba(255, 255, 255, 0.4);
-  background: #a5a6a7;
+  color:white;
+  background: white;
 }

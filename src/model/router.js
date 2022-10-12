@@ -7,6 +7,7 @@ import WaterY from '../componente/WaterY';
 import WaterZ from '../componente/WaterZ';
 import SafetyZ from '../componente/SafetyZ';
 import Software from '../componente/Software';
+import Recruit from '../componente/Recruit';
 let routes = [
     {
       path: "/",
@@ -67,6 +68,10 @@ let routes = [
     {
       path: "/safetyz",
       component: SafetyZ,
+    },
+    {
+      path: "/recruit",
+      component: Recruit,
     },
 ];
 
